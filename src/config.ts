@@ -17,22 +17,21 @@ import type {
 import { LinkPreset } from "./types/config";
 
 // 移除i18n导入以避免循环依赖
-
 // 定义站点语言
-const SITE_LANG = "ja"; // 语言代码，例如：'en', 'zh_CN', 'ja' 等。
+const SITE_LANG = "zh_CN"; // 语言代码，例如：'en', 'zh_CN', 'ja' 等。
 const SITE_TIMEZONE = 8; //设置你的网站时区 from -12 to 12 default in UTC+8
 export const siteConfig: SiteConfig = {
-	title: "Mizuki",
-	subtitle: "One demo website",
-	siteURL: "https://mizuki.mysqil.com/", // 请替换为你的站点URL，以斜杠结尾
-	siteStartDate: "2025-01-01", // 站点开始运行日期，用于站点统计组件计算运行天数
+	title: "琉璃亭",
+	subtitle: "✿白箬璃❀ᵒᵏᵎ的个人博客",
+	siteURL: "https://walnuthyper.pages.dev/", // 请替换为你的站点URL，以斜杠结尾
+	siteStartDate: "2026-01-01", // 站点开始运行日期，用于站点统计组件计算运行天数
 
 	timeZone: SITE_TIMEZONE,
 
 	lang: SITE_LANG,
 
 	themeColor: {
-		hue: 60, // 主题色的默认色相，范围从 0 到 360。例如：红色：0，青色：200，蓝绿色：250，粉色：345
+		hue: 100, // 主题色的默认色相，范围从 0 到 360。例如：红色：0，青色：200，蓝绿色：250，粉色：345
 		fixed: false, // 对访问者隐藏主题色选择器
 	},
 
@@ -71,18 +70,18 @@ export const siteConfig: SiteConfig = {
 		fetchOnDev: false, // 是否在开发环境下获取 Bangumi 数据（默认 false），获取前先执行 pnpm build 构建 json 文件
 	},
 
-	bilibili: {
-		vmid: "your-bilibili-vmid", // 在此处设置你的Bilibili用户ID (uid)，例如 "1129280784"
-		fetchOnDev: false, // 是否在开发环境下获取 Bilibili 数据（默认 false）
-		coverMirror: "", // 封面图片镜像源（可选，如果需要使用镜像源，例如 "https://images.weserv.nl/?url="）
-		useWebp: true, // 是否使用WebP格式（默认 true）
+	// bilibili: {
+	// 	vmid: "your-bilibili-vmid", // 在此处设置你的Bilibili用户ID (uid)，例如 "1129280784"
+	// 	fetchOnDev: false, // 是否在开发环境下获取 Bilibili 数据（默认 false）
+	// 	coverMirror: "", // 封面图片镜像源（可选，如果需要使用镜像源，例如 "https://images.weserv.nl/?url="）
+	// 	useWebp: true, // 是否使用WebP格式（默认 true）
 
-		// bilibili 观看进度配置说明(可选，如需配置仔细阅读):
-		// 1. 本地开发：请在 .env 文件中填写 BILI_SESSDATA=your_SESSDATA
-		// 2. 远程构建：请在 GitHub 仓库 Settings -> Secrets 中添加 BILI_SESSDATA
-		// 注意：SESSDATA 为账号凭证，为防止泄露，切记不可使用硬编码。
-		// 安全提示：如 SESSDATA 已泄露，请打开 B站手机端 —— 我的 —— 设置 —— 安全隐私 —— 登陆设备管理 —— 一键退登，销毁已泄露的账号凭证
-	},
+	// 	// bilibili 观看进度配置说明(可选，如需配置仔细阅读):
+	// 	// 1. 本地开发：请在 .env 文件中填写 BILI_SESSDATA=your_SESSDATA
+	// 	// 2. 远程构建：请在 GitHub 仓库 Settings -> Secrets 中添加 BILI_SESSDATA
+	// 	// 注意：SESSDATA 为账号凭证，为防止泄露，切记不可使用硬编码。
+	// 	// 安全提示：如 SESSDATA 已泄露，请打开 B站手机端 —— 我的 —— 设置 —— 安全隐私 —— 登陆设备管理 —— 一键退登，销毁已泄露的账号凭证
+	// },
 
 	anime: {
 		mode: "local", // 番剧页面模式："bangumi" 使用Bangumi API，"local" 使用本地配置，"bilibili" 使用Bilibili API
@@ -140,7 +139,7 @@ export const siteConfig: SiteConfig = {
 
 		carousel: {
 			enable: true, // 为 true 时：为多张图片启用轮播。为 false 时：从数组中随机显示一张图片
-			interval: 1.5, // 轮播间隔时间（秒）
+			interval: 5.5, // 轮播间隔时间（秒）
 		},
 
 		waves: {
@@ -193,7 +192,7 @@ export const siteConfig: SiteConfig = {
 		enable: true, // 启用目录功能
 		mode: "sidebar", // 目录显示模式："float" 悬浮按钮模式，"sidebar" 侧边栏模式
 		depth: 2, // 目录深度，1-6，1 表示只显示 h1 标题，2 表示显示 h1 和 h2 标题，依此类推
-		useJapaneseBadge: true, // 使用日语假名标记（あいうえお...）代替数字，开启后会将 1、2、3... 改为 あ、い、う...
+		useJapaneseBadge: false, // 使用日语假名标记（あいうえお...）代替数字，开启后会将 1、2、3... 改为 あ、い、う...
 	},
 	showCoverInContent: true, // 在文章内容页显示文章封面
 	generateOgImages: false, // 启用生成OpenGraph图片功能,注意开启后要渲染很长时间，不建议本地调试的时候开启
@@ -261,29 +260,25 @@ export const navBarConfig: NavBarConfig = {
 	links: [
 		LinkPreset.Home,
 		LinkPreset.Archive,
-		// 支持自定义导航栏链接，支持多级菜单
+		// 支持自定义导航栏链接,并且支持多级菜单,3.1版本新加
 		{
 			name: "Links",
 			url: "/links/",
 			icon: "material-symbols:link",
 			children: [
 				{
-					name: "GitHub",
-					url: "https://github.com/matsuzaka-yuki/Mizuki",
+					name: "QQ",
+
+					url: "https://vip.123pan.cn/1813811951/yk6baz03t0n000d7w33hp3p3orfsqbg8DIYPDwYPDIryDGxwDqYwDY==.jpg",
 					external: true,
-					icon: "fa7-brands:github",
+					icon: "fa7-brands:qq",
 				},
 				{
-					name: "Bilibili",
-					url: "https://space.bilibili.com/701864046",
+					name: "WeChat",
+
+					url: "https://vip.123pan.cn/1813811951/ymjew503t0m000d7w32y3w1m2xypiw30DIYPDwYPDIryDGxwDqYwDY==.jpg",
 					external: true,
-					icon: "fa7-brands:bilibili",
-				},
-				{
-					name: "Gitee",
-					url: "https://gitee.com/matsuzakayuki/Mizuki",
-					external: true,
-					icon: "mdi:git",
+					icon: "fa7-brands:weixin",
 				},
 			],
 		},
@@ -358,38 +353,26 @@ export const navBarConfig: NavBarConfig = {
 };
 
 export const profileConfig: ProfileConfig = {
-	avatar: "assets/images/avatar.webp", // 相对于 /src 目录。如果以 '/' 开头，则相对于 /public 目录
-	name: "まつざか ゆき",
-	bio: "世界は大きい、君は行かなければならない",
+	avatar: "assets/images/myshow.png", // 相对于 /src 目录。如果以 '/' 开头，则相对于 /public 目录
+	name: "✿白箬璃❀ᵒᵏᵎ",
+
+	bio: "我不受欢迎，怎么想都是你们的错。",
 	typewriter: {
 		enable: true, // 启用个人简介打字机效果
 		speed: 80, // 打字速度（毫秒）
 	},
 	links: [
 		{
-			name: "Bilibili",
-			icon: "fa7-brands:bilibili",
-			url: "https://space.bilibili.com/701864046",
+			name: "QQ",
+			icon: "fa7-brands:qq",
+
+			url: "https://vip.123pan.cn/1813811951/yk6baz03t0n000d7w33hp3p3orfsqbg8DIYPDwYPDIryDGxwDqYwDY==.jpg",
 		},
 		{
-			name: "Gitee",
-			icon: "mdi:git",
-			url: "https://gitee.com/matsuzakayuki",
-		},
-		{
-			name: "GitHub",
-			icon: "fa7-brands:github",
-			url: "https://github.com/matsuzaka-yuki",
-		},
-		{
-			name: "Codeberg",
-			icon: "simple-icons:codeberg",
-			url: "https://codeberg.org",
-		},
-		{
-			name: "Discord",
-			icon: "fa7-brands:discord",
-			url: "https://discord.gg/MqW6TcQtVM",
+			name: "微信",
+			icon: "fa7-brands:weixin",
+
+			url: "https://vip.123pan.cn/1813811951/ymjew503t0m000d7w32y3w1m2xypiw30DIYPDwYPDIryDGxwDqYwDY==.jpg",
 		},
 	],
 };
@@ -447,14 +430,15 @@ export const shareConfig: ShareConfig = {
 };
 
 export const announcementConfig: AnnouncementConfig = {
-	title: "", // 公告标题，填空使用i18n字符串Key.announcement
-	content: "ブログへようこそ！これはサンプルの告知です", // 公告内容
-	closable: true, // 允许用户关闭公告
+	title: "公告",
+	content:
+		"你好啊，欢迎来到我的个人博客，我会在这里分享一些我的日常、想法、和教程。",
+	closable: false, // 重要公告，不允许关闭
 	link: {
-		enable: true, // 启用链接
-		text: "Learn More", // 链接文本
-		url: "/about/", // 链接 URL
-		external: false, // 内部链接
+		enable: false,
+		text: "嘻嘻嘻",
+		url: "https://1813811951.v.123pan.cn/1813811951/20905926",
+		external: true, // 外部链接，在新标签页打开
 	},
 };
 
@@ -618,23 +602,31 @@ export const sakuraConfig: SakuraConfig = {
 export const pioConfig: import("./types/config").PioConfig = {
 	enable: true, // 启用看板娘
 	models: ["/pio/models/pio/model.json"], // 默认模型路径
-	position: "left", // 模型位置
+	position: "left", // 默认位置在右侧
 	width: 280, // 默认宽度
 	height: 250, // 默认高度
 	mode: "draggable", // 默认为可拖拽模式
 	hiddenOnMobile: true, // 默认在移动设备上隐藏
 	dialog: {
-		welcome: "Welcome to Mizuki Website!", // 欢迎词
+		welcome: "欢迎来到 ✿白箬璃❀ᵒᵏᵎ的个人博客！", // 欢迎词
 		touch: [
-			"What are you doing?",
-			"Stop touching me!",
+			"你在干什么？",
+			"再摸我就报警了！",
 			"HENTAI!",
-			"Don't bully me like that!",
+
+			"不可以这样欺负我啦！",
+			"哎呀，别碰那里~",
+			"非礼啊！",
+			"讨厌~",
+			"你好过分哦！",
+			"住手！",
+			"我要生气了！",
 		], // 触摸提示
-		home: "Click here to go back to homepage!", // 首页提示
-		skin: ["Want to see my new outfit?", "The new outfit looks great~"], // 换装提示
-		close: "QWQ See you next time~", // 关闭提示
-		link: "https://github.com/matsuzaka-yuki/Mizuki", // 关于链接
+
+		home: "点击这里回到首页！", // 首页提示
+		skin: ["想看看我的新衣服吗？", "新衣服真漂亮~"], // 换装提示
+		close: "QWQ 下次再见吧~", // 关闭提示
+		link: "https://walnuthyper.pages.dev/", // 关于链接
 	},
 };
 
@@ -651,3 +643,4 @@ export const widgetConfigs = {
 } as const;
 
 // umamiConfig相关配置已移动至astro.config.mjs中,统计脚本请自行在Layout.astro文件的<head>中插入
+
