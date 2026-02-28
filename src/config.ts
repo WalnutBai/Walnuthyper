@@ -124,6 +124,12 @@ export const siteConfig: SiteConfig = {
 				"/assets/desktop-banner/4.webp",
 				"/assets/desktop-banner/5.webp",
 				"/assets/desktop-banner/6.webp",
+				"/assets/desktop-banner/7.webp",
+				"/assets/desktop-banner/8.webp",
+				"/assets/desktop-banner/9.webp",
+				"/assets/desktop-banner/10.webp",
+				"/assets/desktop-banner/11.webp",
+				"/assets/desktop-banner/12.webp",
 			], // 桌面横幅图片
 			mobile: [
 				"/assets/mobile-banner/1.webp",
@@ -132,6 +138,12 @@ export const siteConfig: SiteConfig = {
 				"/assets/mobile-banner/4.webp",
 				"/assets/mobile-banner/5.webp",
 				"/assets/mobile-banner/6.webp",
+				"/assets/mobile-banner/7.webp",
+				"/assets/mobile-banner/8.webp",
+				"/assets/mobile-banner/9.webp",
+				"/assets/mobile-banner/10.webp",
+				"/assets/mobile-banner/11.webp",
+				"/assets/mobile-banner/12.webp",
 			], // 移动横幅图片
 		}, // 使用本地横幅图片
 
@@ -353,7 +365,7 @@ export const navBarConfig: NavBarConfig = {
 };
 
 export const profileConfig: ProfileConfig = {
-	avatar: "assets/images/myshow.png", // 相对于 /src 目录。如果以 '/' 开头，则相对于 /public 目录
+	avatar: "assets/images/myshow.jpg", // 相对于 /src 目录。如果以 '/' 开头，则相对于 /public 目录
 	name: "✿白箬璃❀ᵒᵏᵎ",
 
 	bio: "我不受欢迎，怎么想都是你们的错。",
@@ -431,8 +443,7 @@ export const shareConfig: ShareConfig = {
 
 export const announcementConfig: AnnouncementConfig = {
 	title: "公告",
-	content:
-		"你好啊，欢迎来到我的个人博客，我会在这里分享一些我的日常、想法、和教程。",
+	content: "欢迎来到我的个人博客，我会在这里分享一些我的日常、想法、和教程。",
 	closable: false, // 重要公告，不允许关闭
 	link: {
 		enable: false,
@@ -447,7 +458,7 @@ export const musicPlayerConfig: MusicPlayerConfig = {
 	mode: "meting", // 音乐播放器模式，可选 "local" 或 "meting"
 	meting_api:
 		"https://meting.mysqil.com/api?server=:server&type=:type&id=:id&auth=:auth&r=:r", // Meting API 地址
-	id: "14164869977", // 歌单ID
+	id: "12484900798", // 歌单ID
 	server: "netease", // 音乐源服务器。有的meting的api源支持更多平台,一般来说,netease=网易云音乐, tencent=QQ音乐, kugou=酷狗音乐, xiami=虾米音乐, baidu=百度音乐
 	type: "playlist", // 播单类型
 };
@@ -572,12 +583,12 @@ export const sidebarLayoutConfig: SidebarLayoutConfig = {
 };
 
 export const sakuraConfig: SakuraConfig = {
-	enable: false, // 默认关闭樱花特效
+	enable: true, // 默认关闭樱花特效
 	sakuraNum: 21, // 樱花数量
 	limitTimes: -1, // 樱花越界限制次数，-1为无限循环
 	size: {
-		min: 0.5, // 樱花最小尺寸倍数
-		max: 1.1, // 樱花最大尺寸倍数
+		min: 0.1, // 樱花最小尺寸倍数
+		max: 0.6, // 樱花最大尺寸倍数
 	},
 	opacity: {
 		min: 0.3, // 樱花最小不透明度
@@ -626,7 +637,7 @@ export const pioConfig: import("./types/config").PioConfig = {
 		home: "点击这里回到首页！", // 首页提示
 		skin: ["想看看我的新衣服吗？", "新衣服真漂亮~"], // 换装提示
 		close: "QWQ 下次再见吧~", // 关闭提示
-		link: "https://walnuthyper.pages.dev/", // 关于链接
+		link: "https://walnutbai.dpdns.org", // 关于链接
 	},
 };
 
