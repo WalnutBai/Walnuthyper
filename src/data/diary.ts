@@ -20,6 +20,12 @@ const diaryData: DiaryItem[] = [
 		date: "2026-01-02T10:30:00Z",
 		images: ["/images/diary/weixinqq.png", "/images/diary/weixinqq.png"],
 	},
+		{
+		id: 2,
+		content: ` 下雨下了一整天`,
+		date: "2026-03-02T2:32:00Z",
+		images: ["/images/diary/26-03-02-1.jpg", "/images/diary/26-03-02-2.jpg", "/images/diary/26-03-02-3.jpg"],
+	},
 ];
 
 // 获取日记统计数据
