@@ -23,7 +23,7 @@ const diaryData: DiaryItem[] = [
 		{
 		id: 2,
 		content: ` 下雨下了一整天`,
-		date: "2026-03-02T2:32:00Z",
+		date: "2026-03-02T02:32:00Z",
 		images: ["/images/diary/26-03-02-1.jpg", "/images/diary/26-03-02-2.jpg", "/images/diary/26-03-02-3.jpg"],
 	},
 ];
