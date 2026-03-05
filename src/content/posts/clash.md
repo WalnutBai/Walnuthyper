@@ -9,8 +9,8 @@ draft: false
 ## 机场推荐
 > 以下机场均为本人实际使用后推荐，无任何商业合作关系，不涉及任何推广费用。
 
-1. [赔钱机场](https://xn--mes358aby2apfg.com/#/register?code=mBqldaQX) (便宜，性价比高)
-2. [三毛机场](https://g-2.xn--ehqx7tcnnope.com/#/login) (价格实惠)
+1. [三毛机场](https://g-2.xn--ehqx7tcnnope.com/#/login) (稳定快速，价格无敌，超级极致性价比，首推) 
+2. [赔钱机场](https://xn--mes358aby2apfg.com/#/register?code=mBqldaQX) (便宜，性价比高)
 3. [魔法云机场](https://tg.mfjsq.top/#/register?code=uOK1mmeH) (年付价格优惠)
 4. [狗狗加速](https://panel.dg5.biz/#/register?code=oaxsAGo6) (稳定性好，价格略高)
 5. [一元机场](https://xn--4gq62f52gdss.com/#/register?code=mxI2qipN) (价格便宜，但速度较慢)
